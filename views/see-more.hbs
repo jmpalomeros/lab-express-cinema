@@ -1,5 +1,9 @@
 <div>
     <a href="/movies">Go Back</a>
+    <br>
+
+
+    <img src="{{details.image}}" alt="cartel">
     
     <h3>{{details.title}}</h3>
 
@@ -7,7 +11,9 @@
     <p>Stars</p>
     <ul>
         {{#each details.stars}}
-        <li>{{this.stars}}</li>
+        
+        <li>{{this}}</li>
+        
         {{/each}}
     </ul>
     <p>{{details.description}}</p>
